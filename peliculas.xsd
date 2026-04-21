@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Elemento raíz -->
+  <xs:element name="catalogo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pelicula" type="tipoPelicula" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Tipo pelicula -->
+  <xs:complexType name="tipoPelicula">
+    <xs:sequence>
+      <xs:element name="titulo"      type="xs:string"/>
+      <xs:element name="director"    type="xs:string"/>
+      <xs:element name="anio"        type="tipoAnio"/>
+      <xs:element name="genero"      type="tipoGenero"/>
+      <xs:element name="duracion"    type="xs:positiveInteger"/>
+      <xs:element name="puntuacion"  type="tipoPuntuacion"/>
+      <xs:element name="sinopsis"    type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="tipoId" use="required"/>
+  </xs:complexType>
+
+  <!-- Tipo año: entre 1888 y 2099 -->
+  <xs:simpleType name="tipoAnio">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1888"/>
+      <xs:maxInclusive value="2099"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo puntuación: decimal entre 0.0 y 10.0 -->
+  <xs:simpleType name="tipoPuntuacion">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0.0"/>
+      <xs:maxInclusive value="10.0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo género: valores permitidos -->
+  <xs:simpleType name="tipoGenero">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Acción"/>
+      <xs:enumeration value="Aventura"/>
+      <xs:enumeration value="Animación"/>
+      <xs:enumeration value="Ciencia Ficción"/>
+      <xs:enumeration value="Comedia"/>
+      <xs:enumeration value="Crimen"/>
+      <xs:enumeration value="Drama"/>
+      <xs:enumeration value="Fantasía"/>
+      <xs:enumeration value="Horror"/>
+      <xs:enumeration value="Romance"/>
+      <xs:enumeration value="Thriller"/>
+      <xs:enumeration value="Western"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo ID: formato P001, P002... -->
+  <xs:simpleType name="tipoId">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="P\d{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

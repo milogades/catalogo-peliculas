@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="peliculas.xsl"?>
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="peliculas.xsd">
+
+  <pelicula id="P001">
+    <titulo>Interstellar</titulo>
+    <director>Christopher Nolan</director>
+    <anio>2014</anio>
+    <genero>Ciencia Ficción</genero>
+    <duracion>169</duracion>
+    <puntuacion>9.2</puntuacion>
+    <sinopsis>Un grupo de exploradores viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad.</sinopsis>
+  </pelicula>
+
+  <pelicula id="P002">
+    <titulo>El Padrino</titulo>
+    <director>Francis Ford Coppola</director>
+    <anio>1972</anio>
+    <genero>Drama</genero>
+    <duracion>175</duracion>
+    <puntuacion>9.2</puntuacion>
+    <sinopsis>El patriarca envejecido de una dinastía del crimen organizado transfiere el control de su imperio a su reacio hijo.</sinopsis>
+  </pelicula>
+
+  <pelicula id="P003">
+    <titulo>El Caballero Oscuro</titulo>
+    <director>Christopher Nolan</director>
+    <anio>2008</anio>
+    <genero>Acción</genero>
+    <duracion>152</duracion>
+    <puntuacion>9.0</puntuacion>
+    <sinopsis>Batman se enfrenta al Joker, un criminal caótico que quiere sumir Gotham City en el caos.</sinopsis>
+  </pelicula>
+
+  <pelicula id="P004">
+    <titulo>Pulp Fiction</titulo>
+    <director>Quentin Tarantino</director>
+    <anio>1994</anio>
+    <genero>Crimen</genero>
+    <duracion>154</duracion>
+    <puntuacion>8.9</puntuacion>
+    <sinopsis>Las vidas de dos sicarios, un boxeador y la esposa de un gángster se entrelazan en una serie de incidentes violentos.</sinopsis>
+  </pelicula>
+
+  <pelicula id="P005">
+    <titulo>El Señor de los Anillos: El Retorno del Rey</titulo>
+    <director>Peter Jackson</director>
+    <anio>2003</anio>
+    <genero>Fantasía</genero>
+    <duracion>201</duracion>
+    <puntuacion>9.0</puntuacion>
+    <sinopsis>Gandalf y Aragorn lideran el mundo de los hombres contra el ejército de Sauron para distraerlo mientras Frodo y Sam se acercan al Monte del Destino.</sinopsis>
+  </pelicula>
+
+  <pelicula id="P006">
+    <titulo>Origen</titulo>
+    <director>Christopher Nolan</director>
+    <anio>2010</anio>
+    <genero>Ciencia Ficción</genero>
+    <duracion>148</duracion>
+    <puntuacion>8.8</puntuacion>
+    <sinopsis>Un ladrón que roba secretos corporativos a través del uso de tecnología de sueños compartidos recibe la tarea inversa de plantar una idea.</sinopsis>
+  </pelicula>
+
+  <pelicula id="P007">
+    <titulo>Forrest Gump</titulo>
+    <director>Robert Zemeckis</director>
+    <anio>1994</anio>
+    <genero>Drama</genero>
+    <duracion>142</duracion>
+    <puntuacion>8.8</puntuacion>
+    <sinopsis>Las presidencias de Kennedy y Johnson, Vietnam, Watergate y otros eventos históricos se desarrollan desde la perspectiva de un hombre de Alabama con un coeficiente intelectual bajo.</sinopsis>
+  </pelicula>
+
+  <pelicula id="P008">
+    <titulo>Matrix</titulo>
+    <director>Lana y Lilly Wachowski</director>
+    <anio>1999</anio>
+    <genero>Ciencia Ficción</genero>
+    <duracion>136</duracion>
+    <puntuacion>8.7</puntuacion>
+    <sinopsis>Un programador descubre que la realidad tal como la conoce es en realidad una simulación llamada Matrix.</sinopsis>
+  </pelicula>
+
+</catalogo>
